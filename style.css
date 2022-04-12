@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    font-family: 'cookie', cursive;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: maroon;
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: url(images/Us-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 0 0 300px 0;
+
+}
+/* marquee {
+    width: 90%;
+    height: auto;
+    background-color: rgba(255,208,200,.7);
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+.nav {
+    width: 90%;
+    height: auto;
+    background-color: rgba(255,208,200,.7);
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav b {
+    font-size: 20px;
+    margin-left: 20px;
+    color: maroon;
+
+}
+.menu {
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,.5);
+    margin-left: 30px;
+    transition-duration: 3s;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 15px;
+    color: navy;
+    font-weight: bolder;
+    transition-duration: .5s;
+}
+.menu a:hover {
+    border-bottom: 3px solid maroon;
+}
+.text {
+    width: 100%;
+    position: relative;
+    top: 90px;
+    left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.text h1{
+    color: silver;
+    text-shadow: 0 3px 10px gold;
+}
+.text .date{
+    color: white;
+    background-color: maroon;
+    padding: 5px;
+    border-radius: 20px 0 20px 0;
+    transition-duration: .5s;
+}
+.text .date:hover {
+    background-color: silver;
+    color: maroon;
+}
+.section {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.us {
+    width: 80%;
+    height: auto;
+    background-color: silver;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 20px maroon;
+}
+.us img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top: 10px solid maroon;
+    border-bottom: 10px solid black;
+}
+.section h2 {
+    width: 100%;
+    text-align: center;
+    color: maroon;
+    font-size: 40px;
+}
+.section h2 a{
+    text-decoration: none;
+    color: maroon;
+}
+.us1 {
+    display: flex;
+    flex-direction: column;
+}
+.us1 span {
+    color: silver;
+    font-size: 20px;
+    padding: 4px;
+    background-color: maroon;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.venue {
+    width: 80%;
+    height: auto;
+    background-image: url(images/Joint_prayers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    border-radius: 20px;
+    border: 2px solid navy;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: 0 5px 10px 0 navy;
+
+}
+.venue h2 a{
+    color: silver;
+}
+.venue img{
+    width: 70%;
+    height: 150px;
+    display: inline;
+    /*border: 2px solid maroon; /* Remove for EYN Logo */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+.venue p {
+    font-size: 20px;
+    line-height: 30px;
+    color: silver;
+
+}
+.venue p span {
+    color: gold;
+}
+
+.recept {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid maroon;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: 0 5px 10px 0 maroon;
+    margin-bottom: 20px;
+
+}
+.recept img{
+    width: 100%;
+    height: 220px;
+    display: inline;
+    margin-bottom: 10px;
+    
+}
+.recept p {
+    font-size: 20px;
+    line-height: 30px;
+    color: maroon;
+}
+footer{
+    width: 100%;
+    height: auto;
+    color: navy;
+    font-size: 17px;
+    font-family: monospace;
+    background-color: silver;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* #slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+@keyframe slider {
+
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+} */
