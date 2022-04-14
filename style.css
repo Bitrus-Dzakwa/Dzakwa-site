@@ -275,3 +275,22 @@ h3 {
     margin-top: 10px;
     color: maroon;
 }
+
+#input {
+    margin: 10px 0;
+    overflow: hidden;
+    color: maroon;
+    border: 1px solid maroon;
+}
+#click {
+    margin: 10px 4px;
+    overflow: hidden;
+    border: 2px solid maroon;
+    background-color: transparent;
+    color: navy;
+    border-radius: 5px;
+}
+#output {
+    overflow: hidden;
+    font-size: 17px;
+}
