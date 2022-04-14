@@ -189,8 +189,11 @@
 }
 .venue p span {
     color: maroon;
+    color: rgb(209, 178, 0);
 }
-
+.venue p span {
+    color: gold;
+}
 .recept {
     width: 80%;
     height: auto;
@@ -220,10 +223,10 @@
 footer{
     width: 100%;
     height: auto;
-    color: navy;
+    color: white;
     font-size: 17px;
     font-family: monospace;
-    background-color: silver;
+    background-color: grey;
     margin-top: 20px;
     display: inline-flex;
     justify-content:center;
@@ -231,47 +234,44 @@ footer{
     flex-wrap: wrap;
 }
 
-/* #slider {
+#slider {
     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    animation: slider 20s ease-in-out infinite;
 }
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-#slider figure img {
-    float: left;
-    width: 20%;
-}
-@keyframe slider {
 
-    0% {
-        left: 0%;
-    }
-    20% {
-        left: 0%;
+@keyframes slider {
+
+    0%,100%{
+        background-image: url(images/Caleb-removebg-preview.png)
     }
     25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
+        background-image: url(images/DSC_6064-removebg-preview.png)
     }
     50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
+        background-image: url(images/Mark-removebg-preview.png);
     }
     75% {
-        left: -300%;
+        background-image: url(images/Us-4.jpg);
     }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-} */
+} 
+
+.foot-head{
+    text-align: center;
+    font-size: 30px;
+    color: maroon;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0px;
+    width: 40%;
+    margin: auto;
+
+}
+h3 {
+    margin-top: 10px;
+    color: maroon;
+}
