@@ -60,14 +60,29 @@
             <div id="slider">
                 <div class="foot-head">Friends</div>
             </div>
-            
-            <h3>We all hope to see you there!</h3>
+    
+            <input type="text" id="input" placeholder="Input your name please">
+            <button id="click">Submit</button>
+            <div>
+                <h3 id="output"></h3>
+            </div>
 
             <footer>&copy; copyright 2021, you can follow me @ josephbitrus62@gmail.com / 08163731846
             </footer>
         </div>
     </div>
-
+    
+    <script>
+        // let a= prompt("Type in your name here:")
+        // document.getElementById("input").innerHTML+=`${a} we all hope to see you`
+        const input = document.getElementById('input');
+        document.getElementById('click').addEventListener('click',()=>{
+            console.log(input.value)
+              document.getElementById('output').innerHTML = `Dear ${input.value} we hope to see you`;
+              input.style.display = 'none';
+              document.getElementById('click').style.display = 'none';
+        })
+    </script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
